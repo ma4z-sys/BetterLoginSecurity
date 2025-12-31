@@ -5,25 +5,28 @@ api-version: "1.21"
 author: ma4z
 commands:
   login:
-    description: Login with your password
+    description: "Login with your password"
     usage: /login <password>
   logout:
-    description: Logout and require login again
+    description: "Logout and require login again"
     usage: /logout
   register:
-    description: Register a new account
+    description: "Register a new account"
     usage: /register <password> <confirm>
+  premiumlogin:
+    description: "Mark your account as premium (best-effort)"
+    usage: /premiumlogin
   disablelogin:
-    description: Toggle disable cracked-login (admin)
+    description: "Toggle disable cracked-login (admin)"
     usage: /disablelogin
   unregister:
-    description: Remove your account
+    description: "Remove your account"
     usage: /unregister
   changepassword:
-    description: Change your password
+    description: "Change your password"
     usage: /changepassword <current> <new>
   setpassword:
-    description: Admin: set or clear a player's password
+    description: "Admin: set or clear a player's password"
     usage: /setpassword <username> [newpassword]
 
 permissions:
