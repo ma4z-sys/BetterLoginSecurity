@@ -1,0 +1,33 @@
+name: BetterLoginSecurity
+main: com.ma4z.betterlogin.BetterLoginSecurity
+version: "1.0"
+api-version: "1.21"
+author: ma4z
+commands:
+  login:
+    description: Login with your password
+    usage: /login <password>
+  logout:
+    description: Logout and require login again
+    usage: /logout
+  register:
+    description: Register a new account
+    usage: /register <password> <confirm>
+  disablelogin:
+    description: Toggle disable cracked-login (admin)
+    usage: /disablelogin
+  unregister:
+    description: Remove your account
+    usage: /unregister
+  changepassword:
+    description: Change your password
+    usage: /changepassword <current> <new>
+  setpassword:
+    description: Admin: set or clear a player's password
+    usage: /setpassword <username> [newpassword]
+
+permissions:
+  betterlogin.setpassword:
+    default: op
+  betterlogin.disablelogin:
+    default: op
